@@ -2,7 +2,7 @@ $(".gallery").slick({
   dots: true,
   arrows: true,
   infinite: false,
-  speed: 300,
+  speed: 700,
   slidesToShow: 4,
   slidesToScroll: 1,
   responsive: [

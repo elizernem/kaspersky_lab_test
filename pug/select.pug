@@ -1,9 +1,9 @@
 include data.pug
-form.intro__select.select(action="")
+form.intro__select.select
     select.select__selector(name="os-select" id="os-select")
         each item in data
             option(value=item.value)= item.name
-form.intro__pagination.pagination(action="")
+form.intro__pagination.pagination
     ul.pagination__list 
         li.pagination__item 
             label.pagination__control

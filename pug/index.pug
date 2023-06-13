@@ -10,15 +10,16 @@ html(lang="en")
         link(rel="stylesheet" href="css/style.min.css")
     body
         .theme
-            header.header
-                include breadcrumbs.pug
-            main.main
-                include intro.pug
-                    include select.pug
+            <!-- <button class="theme-switcher" type="button"></button> -->
+                header.header
+                    include breadcrumbs.pug
+                main.main
+                    include intro.pug
+                        include select.pug
         include gallery.pug
         script(src="//code.jquery.com/jquery-1.11.0.min.js")
         script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
         script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
-        //- script(src="js/theme-switcher.js")
+        <!-- <script src="js/theme-switcher.js"></script> -->
         script(src="js/cards-change.js")
         script(src="js/slider.js")

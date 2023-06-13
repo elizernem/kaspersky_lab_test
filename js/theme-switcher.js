@@ -1,4 +1,7 @@
-const switcher = document.querySelector(".theme-switcher");
+// There is no switcher in the layout.
+// This code does not work, it is added as an example of the theme switch implementation
+
+// const switcher = document.querySelector(".theme-switcher");
 
 const theme = document.querySelector(".theme");
 const labels = Array.from(document.querySelectorAll(".switch"));

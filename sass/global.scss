@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Kaspersky Sans", "Arial", sans-serif;
+  padding: 10px;
+  min-width: 360px;
+  width: 100vw;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.theme {
+  @media (min-width: $tablet-width) {
+    padding-left: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 406px;
+  }
+}

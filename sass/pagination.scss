@@ -1,0 +1,88 @@
+.pagination {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-bottom: 139px;
+  }
+}
+
+.pagination__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 654px;
+  }
+}
+
+.pagination__item {
+  width: 83px;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.pagination__control {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.pagination__label::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 83px;
+  background-color: transparent;
+  position: relative;
+  top: 10px;
+}
+
+.pagination__input[type="radio"]:checked + svg,
+.pagination__input[type="radio"]:checked + svg > path {
+  fill: $primary;
+  color: $primary;
+}
+
+.pagination__input[type="radio"][value="tools"]:checked + svg,
+.pagination__input[type="radio"][value="tools"]:checked + svg > path {
+  stroke: $primary;
+}
+
+.pagination__input[type="radio"]:checked ~ .pagination__label {
+  color: $primary;
+}
+
+.pagination__input[type="radio"]:checked ~ .pagination__label::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 83px;
+  background-color: $primary;
+  position: relative;
+  top: 10px;
+}
+
+.pagination__input[type="radio"]:hover + svg,
+.pagination__input[type="radio"]:hover + svg > path,
+.pagination__input[type="radio"]:hover ~ .pagination__label {
+  opacity: 0.5;
+}

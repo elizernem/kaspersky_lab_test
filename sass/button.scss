@@ -1,0 +1,28 @@
+.btn {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  display: block;
+  min-height: 48px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 13px 65px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &--primary {
+    background-color: $primary;
+    color: $light;
+    margin-top: 8px;
+    outline: 2px solid $light;
+  }
+
+  &--secondary {
+    background-color: $light;
+    color: $primary;
+    margin-top: 8px;
+    outline: 2px solid $primary;
+  }
+}

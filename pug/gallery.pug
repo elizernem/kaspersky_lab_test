@@ -1,0 +1,32 @@
+mixin starFullness(fullness)
+    li.rating__item 
+        span.rating__icon(class=fullness)
+mixin card(os)
+    .card
+        .card__body
+            h2.card__title Kaspersky #[br] Anti-Virus
+            .card__rating.rating
+                ul.rating__list
+                    +starFullness('rating__icon--full')
+                    +starFullness('rating__icon--full')
+                    +starFullness('rating__icon--full')
+                    +starFullness('rating__icon--full')
+                    +starFullness('rating__icon--half')
+                span 1912 Reviews
+            p.card__text Essential antivirus protection for #[=os]
+            .card__price from #[strong £29.99] /year
+            a.card__btn.btn.btn--primary(href="#") Learn More
+            a.card__btn.btn.btn--secondary(href="#") Learn More
+
+.intro__gallery.gallery
+    .gallery-cell 
+        +card('Windows PCs')
+    .gallery-cell 
+        +card('macOS PCs')
+    .gallery-cell 
+        +card('Android')
+    .gallery-cell 
+        +card('iOS')
+    .gallery-cell 
+        +card('free tools')
+

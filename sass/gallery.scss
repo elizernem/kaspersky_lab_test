@@ -1,0 +1,47 @@
+.gallery {
+  height: 100%;
+  width: 323px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -162px;
+  cursor: grab;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: 56px;
+    width: 580px;
+    margin-top: -139px;
+    left: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    width: 1209px;
+    margin-top: -267px;
+    padding: 50px;
+    margin-left: 56px;
+    margin-right: -56px;
+    left: 406px;
+  }
+}
+
+.gallery-cell {
+  position: relative;
+  margin-right: 16px;
+  padding: 0px 40px;
+  opacity: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0px 40px;
+    margin-right: 28px;
+    opacity: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    max-width: 256px;
+    margin-right: 28px;
+  }
+}

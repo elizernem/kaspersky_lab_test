@@ -1,0 +1,26 @@
+.dark-theme {
+  background-color: $dark;
+}
+
+.dark-theme::before {
+  content: "";
+  width: 406px;
+  height: 100%;
+  background-color: $dark;
+}
+
+.dark-theme-label {
+  color: #ccc;
+}
+
+.dark-theme-text {
+  color: $light;
+}
+
+.dark-theme-path {
+  fill: #ccc;
+}
+
+.dark-theme-stroke {
+  stroke: #ccc;
+}

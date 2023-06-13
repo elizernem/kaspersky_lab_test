@@ -1,0 +1,37 @@
+include data.pug
+form.intro__select.select(action="")
+    select.select__selector(name="os-select" id="os-select")
+        each item in data
+            option(value=item.value)= item.name
+form.intro__pagination.pagination(action="")
+    ul.pagination__list 
+        li.pagination__item 
+            label.pagination__control
+                input.pagination__input.visually-hidden(value='all' type='radio' name="os" checked)
+                include ../img/all.svg
+                span.pagination__label.switch All
+        li.pagination__item 
+            label.pagination__control
+                input.pagination__input.visually-hidden(value='windows' name="os" type='radio')
+                include ../img/windows.svg
+                span.pagination__label.switch Windows
+        li.pagination__item 
+            label.pagination__control
+                input.pagination__input.visually-hidden(value='macos' name="os" type='radio')
+                include ../img/macOS.svg
+                span.pagination__label.switch macOS
+        li.pagination__item 
+            label.pagination__control
+                input.pagination__input.visually-hidden(value='android' name="os" type='radio')
+                include ../img/android.svg
+                span.pagination__label.switch Android
+        li.pagination__item 
+            label.pagination__control
+                input.pagination__input.visually-hidden(value='ios' name="os" type='radio')
+                include ../img/iOS.svg
+                span.pagination__label.switch iPhone & iPad
+        li.pagination__item 
+            label.pagination__control
+                input.pagination__input.visually-hidden(value='tools' name="os" type='radio')
+                include  ../img/tools.svg
+                span.pagination__label.switch Free tools

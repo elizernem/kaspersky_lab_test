@@ -1,0 +1,19 @@
+.select {
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 162px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.select__selector {
+  border: 1px solid #23d1ae;
+  min-width: 312px;
+  padding: 14px;
+  padding-left: 8px;
+}
